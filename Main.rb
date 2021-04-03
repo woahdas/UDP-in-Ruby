@@ -42,7 +42,7 @@ socket.bind(sockaddr)
 require 'hexdump' #we need this to decode the UDP data
 BUFFER_SIZE = 1024
 
-loop do								#continuously decodes and outputs the data we receive
-	data = socket.recv(BUFFER_SIZE)	#
-	Hexdump.dump(data)				      #
-end									              #
+loop do						#continuously decodes and outputs the data we receive
+	data = socket.recv(BUFFER_SIZE)		#
+	Hexdump.dump(data)			#
+end
